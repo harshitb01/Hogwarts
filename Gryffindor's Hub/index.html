@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics</title>
+        <meta name="description" content="This is the description" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles-foot.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <img class="wave" src="Images/wave.jpg" />
+        <div class="container1">
+            <div class="image">
+                <img src="Images/bg.png" />
+            </div>
+            <div class="login-content">
+                <form action="index.html">
+                    <img src="Images/avatar.jpg" />
+                    <h2 class="title">Welcome</h2>
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Username</h5>
+                            <input type="text" class="input" name="userid" id="username" required />
+                        </div>
+                    </div>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Password</h5>
+                            <input type="password" class="input" name="pswrd" id="password" required />
+                        </div>
+                    </div>
+                    <div class="sign-up">Not a Member?<a href="signup.html"> SignUp Now</a></div>
+                    <input type="submit" class="button" value="Login" onclick="check(this.form)" />
+                </form>
+            </div>
+        </div>
+        <script>
+            const inputs = document.querySelectorAll(".input");
+            function addcl() {
+                let parent = this.parentNode.parentNode;
+                parent.classList.add("focus");
+            }
+            function remcl() {
+                let parent = this.parentNode.parentNode;
+                if (this.value == "") {
+                    parent.classList.remove("focus");
+                }
+            }
+            inputs.forEach((input) => {
+                input.addEventListener("focus", addcl);
+                input.addEventListener("blur", remcl);
+            });
+            function check(form) {
+                if (form.userid.value == "admin" && form.pswrd.value == "password") {
+                    window.open("store.html");
+                } else {
+                    alert("You have entered an invalid Username and password");
+                }
+            }
+        </script>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Gryffindor's Hub</h3>
+                <div class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span
+                        ><a href="https://www.facebook.com/wizardingworld/"><i class="fab fa-facebook-f"></i></a
+                    ></span>
+                </div>
+
+                <div class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span
+                        ><a
+                            href="https://twitter.com/wizardingworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            ><i class="fab fa-twitter"></i></a
+                    ></span>
+                </div>
+
+                <div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span
+                        ><a href="https://www.instagram.com/wizardingworld/?hl=en"
+                            ><i class="fab fa-instagram"></i></a
+                    ></span>
+                </div>
+
+                <div class="icon youtube">
+                    <div class="tooltip">YouTube</div>
+                    <span
+                        ><a href="https://www.youtube.com/c/WizardingWorld/videos"><i class="fab fa-youtube"></i></a
+                    ></span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

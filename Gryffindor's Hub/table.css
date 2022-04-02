@@ -1,0 +1,210 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+body::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#f53838, #470207);
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#f57171, #ad020b);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: white;
+    box-shadow: 1px 1px 15px silver;
+    z-index: 1;
+    transition: top 0.3s;
+}
+label {
+    line-height: 80px;
+    padding: 0 80px;
+    font-size: 40px;
+    color: #f20000;
+    letter-spacing: -1px;
+    user-select: none;
+}
+nav ul {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    line-height: 80px;
+    margin-right: 50px;
+}
+nav ul li {
+    margin: 0 5px;
+}
+nav ul li.active a {
+    color: #f20000;
+    box-shadow: inset 0 0 5px #f50a0a, inset 0 0 10px #fa8585, inset 0 0 15px #fcb6b6;
+    text-decoration: none;
+}
+nav ul li:hover a {
+    color: #f20000;
+    box-shadow: inset 0 0 5px #f50a0a, inset 0 0 10px #fa8585, inset 0 0 15px #fcb6b6;
+    text-decoration: none;
+}
+nav ul li a {
+    color: grey;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+}
+nav ul li a.active2 {
+    color: #f20000;
+    box-shadow: inset 0 0 5px #f50a0a, inset 0 0 10px #fa8585, inset 0 0 15px #fcb6b6;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: black;
+    padding: 30px;
+}
+img {
+    width: 300px;
+    height: 400px;
+    box-shadow: -30px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 20px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+button {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 150px;
+    margin: 40px 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    transition: all 0s ease-out;
+}
+button:active {
+    top: 3px;
+}
+button.instagram,
+button.instagram span {
+    background: #e1306c;
+    border-left: 1px solid #c91d56;
+    box-shadow: 0px 5px 0px 0px #c91d56;
+}
+button.instagram:active {
+    box-shadow: 0px 2px 0px 0px #c91d56;
+}
+button span {
+    position: absolute;
+    height: 55px;
+    width: 60px;
+    top: 0;
+    left: -60px;
+    line-height: 55px;
+    font-size: 25px;
+    display: block;
+    font-weight: normal;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button:active span {
+    top: -3px;
+}
+button.instagram span {
+    border-right: 1px solid #c91d56;
+}
+button.instagram:active span {
+    box-shadow: 0px 5px 0px 0px #c91d56, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.instagram a {
+    text-decoration: none;
+    color: white;
+}
+button.twitter,
+button.twitter span {
+    background: #46c1f6;
+    border-left: 1px solid #269bd0;
+    box-shadow: 0px 5px 0px 0px #269bd0;
+}
+button.twitter:active {
+    box-shadow: 0px 2px 0px 0px #269bd0;
+}
+button.twitter span {
+    border-right: 1px solid #269bd0;
+}
+button.twitter:active span {
+    box-shadow: 0px 5px 0px 0px #269bd0, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.twitter a {
+    text-decoration: none;
+    color: white;
+}

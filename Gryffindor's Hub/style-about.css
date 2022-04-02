@@ -1,0 +1,75 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(images/background1.jpg);
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+body::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(#dd1d1d, #63030a);
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#f55a5a, #ad020b);
+}
+
+#navbar {
+    background-image: url(images/condensed.jpg);
+    text-align: center;
+    padding: 30px;
+}
+
+#navbar li {
+    display: inline-flex;
+    transition: 0.8s;
+    margin-right: 45px;
+    font-size: 30px;
+    font-family: Bluu Next, serif;
+    font-weight: bold;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    color: red;
+    transition: 0.7s;
+    padding: 30px;
+}
+
+img {
+    margin-left: 30%;
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+    text-align: center;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Bluu Next, serif;
+    color: #f9f4f2;
+    padding: 20px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 34px;
+    font-family: Bluu Next, serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    color: #f9f4f2;
+}

@@ -23,17 +23,6 @@ body {
     padding: 0;
     min-height: 100%;
 }
-.bg {
-    background-image: url("Images/hpbg.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 body::-webkit-scrollbar {
     width: 23px;
 }
@@ -430,13 +419,11 @@ nav ul li a.active2 {
 
 .container1 {
     width: 100vw;
-    height: 100vh;
-    display: flex;
+    height: 89.5vh;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7rem;
     padding: 0 2rem;
-    align-items: center;
-    justify-content: center;
 }
 
 .image {
@@ -458,8 +445,6 @@ nav ul li a.active2 {
 
 form {
     width: 360px;
-    position: absolute;
-    right: 200px;
 }
 
 .login-content img {
@@ -500,7 +485,6 @@ form {
 .input-div > div {
     position: relative;
     height: 45px;
-    color: #000;
 }
 
 .input-div > div > h5 {

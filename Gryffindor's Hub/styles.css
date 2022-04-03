@@ -2,10 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
 @font-face {
-    font-family: "Booter - Zero Zero";
-    src: url("Fonts/Booter - Zero Zero.woff") format("woff"), url("Fonts/Booter - Zero Zero.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Potter";
+    src: url("font/HarryPotter-ov4z.ttf");
+    
 }
 
 * {
@@ -22,6 +21,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    overflow:hi ;
 }
 body::-webkit-scrollbar {
     width: 23px;
@@ -130,7 +130,7 @@ nav ul li a.active2 {
     text-align: center;
     margin: 8px;
     font-size: 32px;
-    font-family: Georgia, serif;
+    font-family: "Potter";
     font-weight: normal;
     color: gold;
 }
@@ -165,14 +165,19 @@ nav ul li a.active2 {
 }
 
 .main-footer {
-    background-color: rgb(180, 30, 30);
+    background-color: rgb(21, 52, 188);
     color: gold;
     padding: 0.25em 0;
+    height: fit-content;
+    
+    
+    
 }
 
 .main-footer-container {
     display: flex;
     align-items: center;
+    
 }
 
 .footer-nav img {
@@ -432,12 +437,16 @@ nav ul li a.active2 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7rem;
     padding: 0 2rem;
+
 }
 
 .image {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.title{
+    font-family: "Potter";
 }
 
 .login-content {
@@ -454,10 +463,16 @@ nav ul li a.active2 {
 form {
     width: 400px;
     position: absolute;
-    right: 500px;
+    right: 200px;
     background-color: rgba(41, 39, 39, 0.3);
-    box-shadow: 0 5px 30px black;
-}
+    box-shadow: 0 5px 100px black;
+    backdrop-filter: blur(10px); 
+    
+/*     
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  */
+} 
 
 .login-content img {
     height: 100px;
@@ -577,6 +592,7 @@ form {
     color: beige;
     font-size: 18px;
     font-weight: 550;
+    font-family: "Potter";
 }
 a {
     text-decoration: none;
@@ -587,7 +603,10 @@ a:hover {
     color: red;
     text-decoration: underline;
 }
-
+.checkbox{
+    position: relative;
+    left: 40px;
+}
 .button {
     display: block;
     width: 100%;
@@ -595,7 +614,7 @@ a:hover {
     border-radius: 25px;
     outline: none;
     border: none;
-    background-image: linear-gradient(to right, #ff1f2a, #fd9a9a, #ff3131);
+    background-image: linear-gradient(to right, #113eaedf, #9af5fd, #1307bee8);
     background-size: 200%;
     font-size: 1.2rem;
     color: #fff;
@@ -630,6 +649,9 @@ a:hover {
     margin-right: 20px;
     text-transform: uppercase;
     font-size: 0.9rem;
+}
+.div{
+    font-family: "Potter";
 }
 
 .nav-link-bar {

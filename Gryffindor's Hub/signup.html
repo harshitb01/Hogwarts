@@ -17,6 +17,17 @@
                             <button class="signUpBtn">SIGN UP</button>
                             <button class="loginBtn">LOG IN</button>
                         </div>
+
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Name</h5>
+                                <input type="text" class="input" id="name" required />
+                            </div>
+                        </div>
+                        
                         <div class="input-div one">
                             <div class="i">
                                 <i class="fas fa-user"></i>
@@ -25,6 +36,32 @@
                                 <h5>Email Address</h5>
                                 <input type="text" class="input" id="username" required />
                             </div>
+                        </div>
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Phone Number</h5>
+                                <input type="text" class="input" id="contactNo" required />
+                            </div>
+                        </div>
+                        <div class="input-div one">
+                            <table>
+                                <tr>
+                                    <div class = "checkbox">
+                                        <h3> Gender: </h3>
+                                    </div>
+                                </tr>
+                                
+                                    <td>
+                                        <input type="radio" name="gender" value="m" required>
+                                        Male
+                                        <input type="radio" name="gender" value="f" required>
+                                        Female
+                                    </td>
+                                
+                            </table>
                         </div>
                         <div class="input-div pass">
                             <div class="i">
@@ -43,7 +80,7 @@
                                 />
                             </div>
                         </div>
-                        <div class="input-div pass">
+                        <!-- <div class="input-div pass">
                             <div class="i">
                                 <i class="fas fa-lock"></i>
                             </div>
@@ -51,7 +88,7 @@
                                 <h5>Confirm Password</h5>
                                 <input type="password" class="input" name="password2" id="password" required />
                             </div>
-                        </div>
+                        </div> -->
                         <div class="checkBox">
                             <input type="checkbox" name="checkbox" id="checkbox">
                             <span class="text">I agree with term & conditions</span>
@@ -107,7 +144,7 @@
                     length.classList.add("invalid");
                 }
             </script>
-            <footer class="main-footer">
+            <footer class="main-footer">    
                 <div class="container main-footer-container">
                     <h3 class="band-name">The Gryffindor's Hub</h3>
                     <div class="icon facebook">

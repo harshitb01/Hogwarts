@@ -39,6 +39,13 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(#f55a5a, #ad020b);
 }
+.bg{
+    background-image: url(Images/hpbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
 nav {
     position: fixed;
     top: 0;
@@ -413,7 +420,8 @@ nav ul li a.active2 {
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 100%;
+    height: auto;
+    width: auto;
     z-index: -1;
 }
 
@@ -444,7 +452,11 @@ nav ul li a.active2 {
 }
 
 form {
-    width: 360px;
+    width: 400px;
+    position: absolute;
+    right: 500px;
+    background-color: rgba(41, 39, 39, 0.3);
+    box-shadow: 0 5px 30px black;
 }
 
 .login-content img {
@@ -557,6 +569,15 @@ form {
     transition: 0.3s;
 }
 
+.btn button{
+    padding: 3px;
+    margin: 5px 8px 20px 5px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+}
 a {
     text-decoration: none;
     color: red;

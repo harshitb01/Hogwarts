@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $conn = mysqli_connect("localhost", "root", "", "company");
+        $conn = mysqli_connect("localhost", "root", "", "harry");
 
         $query = "SELECT username, password from login where username=? AND password=? LIMIT 1";
 

@@ -11,8 +11,8 @@
         <div class = "bg">
             <div class="container1">
                 <div class="login-content">
-                    <form action="index.html" onSubmit="return checkPassword(this)">
-                        <h2 class="title">Welcome</h2>
+                    <form class="signUpForm"action="index.html" onSubmit="return checkPassword(this)">
+                        <h2 class="signUpTitle">Welcome</h2>
                         <div class="btn">
                             <button class="signUpBtn">SIGN UP</button>
                             <button class="loginBtn">LOG IN</button>
@@ -49,15 +49,15 @@
                         <div class="input-div one">
                             <table>
                                 <tr>
-                                    <div class = "checkbox">
+                                    <div class = "signUpGender">
                                         <h3> Gender: </h3>
                                     </div>
                                 </tr>
                                 
                                     <td>
-                                        <input type="radio" name="gender" value="m" required>
+                                        <input class = "radioButton" type="radio" name="gender" value="m" required>
                                         Male
-                                        <input type="radio" name="gender" value="f" required>
+                                        <input class = "radioButton" type="radio" name="gender" value="f" required>
                                         Female
                                     </td>
                                 

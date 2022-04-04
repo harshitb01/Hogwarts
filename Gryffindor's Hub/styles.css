@@ -445,7 +445,7 @@ nav ul li a.active2 {
     justify-content: flex-end;
     align-items: center;
 }
-.title{
+.signUpTitle{
     font-family: "Potter";
 }
 
@@ -460,7 +460,7 @@ nav ul li a.active2 {
     width: 500px;
 }
 
-form {
+.signUpForm {
     width: 400px;
     position: absolute;
     right: 200px;
@@ -474,9 +474,9 @@ form {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);  */
 } 
 
-.login-content img {
+/* .login-content img {
     height: 100px;
-}
+} */
 
 .login-content h2 {
     margin: 15px 0;
@@ -584,7 +584,17 @@ form {
     transition: 0.3s;
 }
 
-.btn button{
+.signUpBtn{
+    padding: 3px;
+    margin: 5px 8px 20px 5px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: "Potter";
+}
+.loginBtn{
     padding: 3px;
     margin: 5px 8px 20px 5px;
     border-style: none;
@@ -603,7 +613,7 @@ a:hover {
     color: red;
     text-decoration: underline;
 }
-.checkbox{
+.signUpGender{
     position: relative;
     left: 40px;
 }

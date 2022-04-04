@@ -13,9 +13,6 @@ body {
     background-image: url("Images/hpbg.jpg");
     background-size: cover;
     background-attachment: fixed;
-    margin: 0; 
-    height: 100%; 
-    overflow: hidden
 }
 /* align items center vertically and horizontally  */
 .container {
@@ -35,7 +32,6 @@ body {
     background-color: rgba(41, 39, 39, 0.3);
     box-shadow: 0 5px 100px black;
     backdrop-filter: blur(10px);
-    
 }
 /* .signUp{
     width: 400px;
@@ -109,7 +105,7 @@ input:focus {
     margin-top: 30px !important;
 }
 
-.signUpBtn{
+.signUpBtn {
     padding: 3px;
     margin: 5px 8px 20px 5px;
     border-style: none;
@@ -119,7 +115,7 @@ input:focus {
     font-weight: 550;
     font-family: "Potter";
 }
-.loginBtn{
+.loginBtn {
     padding: 3px;
     margin: 5px 8px 20px 5px;
     border-style: none;
@@ -129,7 +125,7 @@ input:focus {
     font-weight: 550;
     font-family: "Potter";
 }
-.signUpTitle{
+.signUpTitle {
     padding-top: 20px;
     font-family: "Potter";
 }
@@ -144,10 +140,9 @@ input:focus {
 .div {
     font-family: "Potter";
 }
-.logInTitle{
+.logInTitle {
     padding-top: 20px;
     font-family: "Potter";
-
 }
 .input-div > div > h5 {
     position: absolute;
@@ -158,10 +153,10 @@ input:focus {
     font-size: 18px;
     transition: 0.3s;
 }
-.signUpGender{
+.signUpGender {
     font-family: "Potter";
 }
-.radioOption{
+.radioOption {
     font-family: "Potter";
 }
 .i {
@@ -236,18 +231,4 @@ input:focus {
 
 .input-div.pass {
     margin-bottom: 4px;
-}
-.main-footer {
-    background-color: rgb(21, 52, 188);
-    color: gold;
-    padding: 0.25em 0;
-    height: fit-content;
-}
-.main-footer-container {
-    display: flex;
-    align-items: center;
-}
-.footer-nav img {
-    width: auto;
-    height: 30px;
 }

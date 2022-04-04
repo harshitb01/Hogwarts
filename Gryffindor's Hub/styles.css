@@ -782,15 +782,15 @@ a:hover {
     border-radius: 50%;
     float: left;
 }
-.loginFormGroup{
+/* .registrationFormGroup{
     display: flex;
     justify-content: center;
 }
-.loginForm{
+.registrationForm{
     width: 400px;
     position: absolute;
     right: 200px;
     background-color: rgba(41, 39, 39, 0.3);
     box-shadow: 0 5px 100px black;
     backdrop-filter: blur(10px); 
-}
+} */

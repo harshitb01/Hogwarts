@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="styles-foot.css" />
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
-    <bodyf>
-        <div class = "bg">
+    <body>
+        <div class="bg">
             <div class="container1">
                 <div class="login-content">
-                    <form class="signUpForm"action="index.html" onSubmit="return checkPassword(this)">
+                    <form class="signUpForm" action="index.html" onSubmit="return checkPassword(this)">
                         <h2 class="signUpTitle">Welcome</h2>
                         <div class="btn">
                             <button class="signUpBtn">SIGN UP</button>
@@ -27,7 +27,7 @@
                                 <input type="text" class="input" id="name" required />
                             </div>
                         </div>
-                        
+
                         <div class="input-div one">
                             <div class="i">
                                 <i class="fas fa-user"></i>
@@ -49,18 +49,16 @@
                         <div class="input-div one">
                             <table>
                                 <tr>
-                                    <div class = "signUpGender">
-                                        <h3> Gender: </h3>
+                                    <div class="signUpGender">
+                                        <h3>Gender:</h3>
                                     </div>
                                 </tr>
-                                
-                                    <td>
-                                        <input class = "radioButton" type="radio" name="gender" value="m" required>
-                                        Male
-                                        <input class = "radioButton" type="radio" name="gender" value="f" required>
-                                        Female
-                                    </td>
-                                
+                                <td>
+                                    <input class="radioButton" type="radio" name="gender" value="m" required />
+                                    Male
+                                    <input class="radioButton" type="radio" name="gender" value="f" required />
+                                    Female
+                                </td>
                             </table>
                         </div>
                         <div class="input-div pass">
@@ -80,17 +78,8 @@
                                 />
                             </div>
                         </div>
-                        <!-- <div class="input-div pass">
-                            <div class="i">
-                                <i class="fas fa-lock"></i>
-                            </div>
-                            <div class="div">
-                                <h5>Confirm Password</h5>
-                                <input type="password" class="input" name="password2" id="password" required />
-                            </div>
-                        </div> -->
                         <div class="checkBox">
-                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox" />
                             <span class="text">I agree with term & conditions</span>
                         </div>
                         <input
@@ -100,102 +89,104 @@
                             formaction="store.html"
                             onclick="validate()"
                         />
-                        <!-- <div class="sign-up">Already a Member?<a href="index.html"> Login Now</a></div> -->
                     </form>
-                        <form class="loginForm" action="" method="get">
-                            <div class="loginFormGroup">
-                                <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
-                            </div>
-                            <div class="loginFormGroup">
-                                <input type="password" id="password" placeholder="Password" required autocomplete="off">
-                         
-                            </div>
-                            <div class="checkBox">
-                                <input type="loginCheckbox" name="checkbox" id="checkbox">
+                    <form class="loginForm" action="" method="get">
+                        <div class="loginFormGroup">
+                            <input type="email" placeholder="Email ID" name="email" required autocomplete="off" />
+                        </div>
+                        <div class="loginFormGroup">
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Password"
+                                required
+                                autocomplete="off"
+                            />
+                        </div>
+                        <div class="checkBox">
+                            <input type="loginCheckbox" name="checkbox" id="checkbox" />
                             <span class="text">Keep me signed in on this device</span>
-                            </div>
-                            <div class="loginFormGroup">
-                                <button type="button" class="btn2">REGISTER</button>
-                            </div>
-                 
-                        f </form>
+                        </div>
+                        <div class="loginFormGroup">
+                            <button type="button" class="btn2">REGISTER</button>
+                        </div>
+                    </form>
                 </div>
-                
             </div>
         </div>
-            <script>
-                const inputs = document.querySelectorAll(".input");
-                function addcl() {
-                    let parent = this.parentNode.parentNode;
-                    parent.classList.add("focus");
+        <script>
+            const inputs = document.querySelectorAll(".input");
+            function addcl() {
+                let parent = this.parentNode.parentNode;
+                parent.classList.add("focus");
+            }
+            function remcl() {
+                let parent = this.parentNode.parentNode;
+                if (this.value == "") {
+                    parent.classList.remove("focus");
                 }
-                function remcl() {
-                    let parent = this.parentNode.parentNode;
-                    if (this.value == "") {
-                        parent.classList.remove("focus");
-                    }
-                }
-                inputs.forEach((input) => {
-                    input.addEventListener("focus", addcl);
-                    input.addEventListener("blur", remcl);
-                });
-                function checkPassword(form) {
-                    password1 = form.password1.value;
-                    password2 = form.password2.value;
-                    if (password1 == "") alert("Please enter Password");
-                    else if (password2 == "") alert("Please enter confirm password");
-                    else if (password1 != password2) {
-                        alert("Password did not match: Please try again...");
-                        return false;
-                    } else {
-                        alert("Password Match: Welcome to Gryffindor's Hub!");
-                        return true;
-                    }
-                }
-                var myInput = document.getElementById("password");
-                var length = document.getElementById("length");
-                if (myInput.value.length >= 8) {
-                    length.classList.remove("invalid");
-                    length.classList.add("valid");
+            }
+            inputs.forEach((input) => {
+                input.addEventListener("focus", addcl);
+                input.addEventListener("blur", remcl);
+            });
+            function checkPassword(form) {
+                password1 = form.password1.value;
+                password2 = form.password2.value;
+                if (password1 == "") alert("Please enter Password");
+                else if (password2 == "") alert("Please enter confirm password");
+                else if (password1 != password2) {
+                    alert("Password did not match: Please try again...");
+                    return false;
                 } else {
-                    length.classList.remove("valid");
-                    length.classList.add("invalid");
+                    alert("Password Match: Welcome to Gryffindor's Hub!");
+                    return true;
                 }
-            </script>
-            <footer class="main-footer">    
-                <div class="container main-footer-container">
-                    <h3 class="band-name">The Gryffindor's Hub</h3>
-                    <div class="icon facebook">
-                        <div class="tooltip">Facebook</div>
-                        <span
-                            ><a href="https://www.facebook.com/wizardingworld/"><i class="fab fa-facebook-f"></i></a
-                        ></span>
-                    </div>
-
-                    <div class="icon twitter">
-                        <div class="tooltip">Twitter</div>
-                        <span
-                            ><a
-                                href="https://twitter.com/wizardingworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                                ><i class="fab fa-twitter"></i></a
-                        ></span>
-                    </div>
-
-                    <div class="icon instagram">
-                        <div class="tooltip">Instagram</div>
-                        <span
-                            ><a href="https://www.instagram.com/wizardingworld/?hl=en"
-                                ><i class="fab fa-instagram"></i></a
-                        ></span>
-                    </div>
-
-                    <div class="icon youtube">
-                        <div class="tooltip">YouTube</div>
-                        <span
-                            ><a href="https://www.youtube.com/c/WizardingWorld/videos"><i class="fab fa-youtube"></i></a
-                        ></span>
-                    </div>
+            }
+            var myInput = document.getElementById("password");
+            var length = document.getElementById("length");
+            if (myInput.value.length >= 8) {
+                length.classList.remove("invalid");
+                length.classList.add("valid");
+            } else {
+                length.classList.remove("valid");
+                length.classList.add("invalid");
+            }
+        </script>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Gryffindor's Hub</h3>
+                <div class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span
+                        ><a href="https://www.facebook.com/wizardingworld/"><i class="fab fa-facebook-f"></i></a
+                    ></span>
                 </div>
-             </footer>
+
+                <div class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span
+                        ><a
+                            href="https://twitter.com/wizardingworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            ><i class="fab fa-twitter"></i></a
+                    ></span>
+                </div>
+
+                <div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span
+                        ><a href="https://www.instagram.com/wizardingworld/?hl=en"
+                            ><i class="fab fa-instagram"></i></a
+                    ></span>
+                </div>
+
+                <div class="icon youtube">
+                    <div class="tooltip">YouTube</div>
+                    <span
+                        ><a href="https://www.youtube.com/c/WizardingWorld/videos"><i class="fab fa-youtube"></i></a
+                    ></span>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

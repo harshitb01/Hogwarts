@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="styles-foot.css" />
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="bg">
             <div class="container1">
                 <div class="login-content">
-                    <form class="signUpForm" action="index.html" onSubmit="return checkPassword(this)">
+                    <form class="signUpForm" action="" onSubmit="get">
                         <h2 class="signUpTitle">Welcome</h2>
                         <div class="btn">
                             <button class="signUpBtn">SIGN UP</button>
@@ -90,7 +91,7 @@
                             onclick="validate()"
                         />
                     </form>
-                    <!-- <form class="registrationForm" action="" method="get">
+                    <form class="registrationForm" action="" method="get">
                         <div class="registrationFormGroup">
                             <input type="email" placeholder="Email ID" name="email" required autocomplete="off" />
                         </div>
@@ -110,7 +111,7 @@
                         <div class="registrationFormGroup">
                             <button type="button" class="btn2">REGISTER</button>
                         </div>
-                    </form> -->
+                    </form>
                 </div>
             </div>
         </div>
@@ -130,28 +131,41 @@
                 input.addEventListener("focus", addcl);
                 input.addEventListener("blur", remcl);
             });
-            function checkPassword(form) {
-                password1 = form.password1.value;
-                password2 = form.password2.value;
-                if (password1 == "") alert("Please enter Password");
-                else if (password2 == "") alert("Please enter confirm password");
-                else if (password1 != password2) {
-                    alert("Password did not match: Please try again...");
-                    return false;
-                } else {
-                    alert("Password Match: Welcome to Gryffindor's Hub!");
-                    return true;
-                }
-            }
-            var myInput = document.getElementById("password");
-            var length = document.getElementById("length");
-            if (myInput.value.length >= 8) {
-                length.classList.remove("invalid");
-                length.classList.add("valid");
-            } else {
-                length.classList.remove("valid");
-                length.classList.add("invalid");
-            }
+            // function checkPassword(form) {
+            //     password1 = form.password1.value;
+            //     password2 = form.password2.value;
+            //     if (password1 == "") alert("Please enter Password");
+            //     else if (password2 == "") alert("Please enter confirm password");
+            //     else if (password1 != password2) {
+            //         alert("Password did not match: Please try again...");
+            //         return false;
+            //     } else {
+            //         alert("Password Match: Welcome to Gryffindor's Hub!");
+            //         return true;
+            //     }
+            // }
+            // var myInput = document.getElementById("password");
+            // var length = document.getElementById("length");
+            // if (myInput.value.length >= 8) {
+            //     length.classList.remove("invalid");
+            //     length.classList.add("valid");
+            // } else {
+            //     length.classList.remove("valid");
+            //     length.classList.add("invalid");
+            // }
+            $(".loginBtn").click(function () {
+                $(".registrationForm").show();
+                $(".signUpForm").hide();
+                $(".loginBtn").css({ "border-bottom": "2px solid #ff4141" });
+                $(".signUpBtn").css({ "border-style": "none" });
+            });
+
+            $(".signUpBtn").click(function () {
+                $(".registrationForm").hide();
+                $(".signUpForm").show();
+                $(".signUpBtn").css({ "border-bottom": "2px solid #ff4141" });
+                $(".loginBtn").css({ "border-style": "none" });
+            });
         </script>
         <footer class="main-footer">
             <div class="container main-footer-container">

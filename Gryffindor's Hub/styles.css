@@ -4,7 +4,6 @@
 @font-face {
     font-family: "Potter";
     src: url("font/HarryPotter-ov4z.ttf");
-    
 }
 
 * {
@@ -21,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    overflow:hi ;
+    overflow: hi;
 }
 body::-webkit-scrollbar {
     width: 23px;
@@ -39,12 +38,11 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(#f55a5a, #ad020b);
 }
-.bg{
+.bg {
     background-image: url(Images/hpbg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
 }
 nav {
     position: fixed;
@@ -169,15 +167,11 @@ nav ul li a.active2 {
     color: gold;
     padding: 0.25em 0;
     height: fit-content;
-    
-    
-    
 }
 
 .main-footer-container {
     display: flex;
     align-items: center;
-    
 }
 
 .footer-nav img {
@@ -437,7 +431,6 @@ nav ul li a.active2 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7rem;
     padding: 0 2rem;
-
 }
 
 .image {
@@ -445,7 +438,7 @@ nav ul li a.active2 {
     justify-content: flex-end;
     align-items: center;
 }
-.signUpTitle{
+.signUpTitle {
     font-family: "Potter";
 }
 
@@ -466,13 +459,13 @@ nav ul li a.active2 {
     right: 200px;
     background-color: rgba(41, 39, 39, 0.3);
     box-shadow: 0 5px 100px black;
-    backdrop-filter: blur(10px); 
-    
-/*     
+    backdrop-filter: blur(10px);
+
+    /*     
     border: 1px solid rgba(255, 255, 255, 0.5);  
     border-right: 1px solid rgba(255, 255, 255, 0.2);  
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);  */
-} 
+}
 
 /* .login-content img {
     height: 100px;
@@ -584,7 +577,7 @@ nav ul li a.active2 {
     transition: 0.3s;
 }
 
-.signUpBtn{
+.signUpBtn {
     padding: 3px;
     margin: 5px 8px 20px 5px;
     border-style: none;
@@ -594,7 +587,7 @@ nav ul li a.active2 {
     font-weight: 550;
     font-family: "Potter";
 }
-.loginBtn{
+.loginBtn {
     padding: 3px;
     margin: 5px 8px 20px 5px;
     border-style: none;
@@ -613,7 +606,7 @@ a:hover {
     color: red;
     text-decoration: underline;
 }
-.sign{
+.sign {
     position: relative;
     left: 40px;
 }
@@ -660,7 +653,7 @@ a:hover {
     text-transform: uppercase;
     font-size: 0.9rem;
 }
-.div{
+.div {
     font-family: "Potter";
 }
 

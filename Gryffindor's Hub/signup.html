@@ -90,19 +90,27 @@
                             formaction="store.html"
                             onclick="validate()"
                         />
+                        
                     </form>
                     <form class="registrationForm" action="" method="get">
+                        <h2 class="loginTitle">Welcome</h2>
                         <div class="registrationFormGroup">
-                            <input type="email" placeholder="Email ID" name="email" required autocomplete="off" />
+                            <div class="loginEmail">
+                                <h5>Email</h5>
+                                <input type="email" placeholder="Email ID" name="email" required autocomplete="off" />
+                            </div>
                         </div>
                         <div class="registrationFormGroup">
-                            <input
-                                type="password"
-                                id="password"
-                                placeholder="Password"
-                                required
-                                autocomplete="off"
-                            />
+                            <div class="loginPassword">
+                                <h5>Password</h5>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    placeholder="Password"
+                                    required
+                                    autocomplete="off"
+                                />
+                            </div>
                         </div>
                         <div class="checkBox">
                             <input type="loginCheckbox" name="checkbox" id="checkbox" />

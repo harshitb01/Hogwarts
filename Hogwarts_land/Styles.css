@@ -13,20 +13,39 @@ body {
     background-image: url("Images/hpbg.jpg");
     background-size: cover;
     background-attachment: fixed;
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
 }
 /* align items center vertically and horizontally  */
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center !important;
     height: 100vh;
+    width: 100vh;
+    display: flex;
+    text-align: center;
 }
 .form {
-    width: 350px;
-    height: 450px;
+    width: 400px;
+    height: auto;
+    position: relative;
+    left: 900px;
     background-color: rgba(41, 39, 39, 0.3);
-    box-shadow: 0 5px 30px black;
+    box-shadow: 0 5px 100px black;
+    backdrop-filter: blur(10px);
+    
 }
+/* .signUp{
+    width: 400px;
+    height: auto;
+    position: relative;
+    left: 900px;
+    background-color: rgba(41, 39, 39, 0.3);
+    box-shadow: 0 5px 100px black;
+    backdrop-filter: blur(10px);
+} */
 .btn button {
     padding: 3px;
     margin: 30px 0px 40px 30px;
@@ -76,21 +95,6 @@ input:focus {
     color: rgb(199, 197, 197);
     font-size: 13px;
 }
-.btn2 {
-    padding: 10px;
-    width: 150px;
-    border-radius: 20px;
-    background-color: rgb(10, 136, 43);
-    border-style: none;
-    color: white;
-    font-weight: 600;
-}
-.btn2:hover {
-    background-color: rgba(10, 136, 43, 0.5);
-}
-.btn button:hover {
-    border-bottom: 2px solid rgb(91, 243, 131);
-}
 
 /* hide signup form */
 .login {
@@ -103,4 +107,147 @@ input:focus {
 }
 .login .checkBox {
     margin-top: 30px !important;
+}
+
+.signUpBtn{
+    padding: 3px;
+    margin: 5px 8px 20px 5px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: "Potter";
+}
+.loginBtn{
+    padding: 3px;
+    margin: 5px 8px 20px 5px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: "Potter";
+}
+.signUpTitle{
+    padding-top: 20px;
+    font-family: "Potter";
+}
+.input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+.div {
+    font-family: "Potter";
+}
+.logInTitle{
+    padding-top: 20px;
+    font-family: "Potter";
+
+}
+.input-div > div > h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: 0.3s;
+}
+.signUpGender{
+    font-family: "Potter";
+}
+.radioOption{
+    font-family: "Potter";
+}
+.i {
+    color: #878787;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.i i {
+    transition: 0.3s;
+}
+.input-div > div > h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.input-div:before,
+.input-div:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #ff3737;
+    transition: 0.4s;
+}
+
+.input-div:before {
+    right: 50%;
+}
+
+.input-div:after {
+    left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+    width: 50%;
+}
+
+.input-div.focus > div > h5 {
+    top: -5px;
+    font-size: 15px;
+}
+
+.input-div.focus > .i > i {
+    color: #fc3842;
+}
+
+.input-div > div > input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #555;
+    font-family: "poppins", sans-serif;
+}
+
+.input-div.pass {
+    margin-bottom: 4px;
+}
+.main-footer {
+    background-color: rgb(21, 52, 188);
+    color: gold;
+    padding: 0.25em 0;
+    height: fit-content;
+}
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+.footer-nav img {
+    width: auto;
+    height: 30px;
 }

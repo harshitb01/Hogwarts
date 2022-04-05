@@ -7,14 +7,14 @@
     background-color: rgb(21, 52, 188);
     color: gold;
     padding: 0.25em 0;
-    height: 100px;
 }
 
 .main-footer-container {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     position: absolute;
     height: 100px;
+    width: 100px;
 }
 
 .footer-nav img {

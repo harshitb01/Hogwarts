@@ -8,10 +8,13 @@
     color: gold;
     padding: 0.25em 0;
     height: fit-content;
+    
+  
+
 }
 
 .main-footer-container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 

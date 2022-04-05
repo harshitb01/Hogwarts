@@ -45,7 +45,7 @@ body {
 }
 
 .btn button:hover {
-    border-bottom: 2px solid rgb(91, 243, 131);
+    border-bottom: 2px solid #ff3737;
 }
 
 .checkBox {

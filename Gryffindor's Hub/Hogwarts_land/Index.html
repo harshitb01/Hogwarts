@@ -1,9 +1,3 @@
-<?php
-include('login.php');
-if (isset($_SESSION['login_user'])) {
-    header("location: profile.php");
-}
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +13,7 @@ if (isset($_SESSION['login_user'])) {
     <body>
         <div class="container">
             <div class="form">
-                <form class="signUp" action="register.php" onSubmit="get" method="post">
+                <form class="signUp" action="" onSubmit="get">
                     <h1 class="signUpTitle">Welcome</h1>
                     <div class="btn">
                         <button class="signUpBtn">SIGN UP</button>
@@ -31,14 +25,7 @@ if (isset($_SESSION['login_user'])) {
                         </div>
                         <div class="div">
                             <h5>Name</h5>
-                            <input
-                                type="text"
-                                name="username"
-                                class="input"
-                                id="name"
-                                required
-                                autocomplete="off"
-                            />
+                            <input type="text" class="input" id="name" required autocomplete="off" />
                         </div>
                     </div>
 
@@ -48,14 +35,7 @@ if (isset($_SESSION['login_user'])) {
                         </div>
                         <div class="div">
                             <h5>Email Address</h5>
-                            <input
-                                type="email"
-                                name="email"
-                                class="input"
-                                id="userName"
-                                required
-                                autocomplete="off"
-                            />
+                            <input type="text" class="input" id="userName" required autocomplete="off" />
                         </div>
                     </div>
                     <div class="input-div one">
@@ -64,14 +44,7 @@ if (isset($_SESSION['login_user'])) {
                         </div>
                         <div class="div">
                             <h5>Phone Number</h5>
-                            <input
-                                type="text"
-                                name="phone"
-                                class="input"
-                                id="contactNo"
-                                required
-                                autocomplete="off"
-                            />
+                            <input type="text" class="input" id="contactNo" required autocomplete="off" />
                         </div>
                     </div>
                     <div class="input-div one">
@@ -108,12 +81,18 @@ if (isset($_SESSION['login_user'])) {
                         </div>
                     </div>
                     <div class="checkBox">
-                        <input type="checkbox" name="checkbox" id="checkbox" required />
+                        <input type="checkbox" name="checkbox" id="checkbox" />
                         <span class="text">I agree with term & conditions</span>
                     </div>
-                    <input type="submit" name="submit" class="button" value="SignUp" />
+                    <input
+                        type="submit"
+                        class="button"
+                        value="SignUp"
+                        formaction="store.html"
+                        onclick="validate()"
+                    />
                 </form>
-                <form class="login" action="" method="post">
+                <form class="login" action="" method="get">
                     <h1 class="logInTitle">Welcome</h1>
                     <div class="btn">
                         <button class="signUpBtn">SIGN UP</button>
@@ -152,11 +131,10 @@ if (isset($_SESSION['login_user'])) {
                         </div>
                     </div>
                     <div class="checkBox">
-                        <input type="checkbox" name="checkbox" id="checkbox" required />
+                        <input type="checkbox" name="checkbox" id="checkbox" />
                         <span class="text">Keep me signed in on this device</span>
                     </div>
-                    <input type="submit" name="submit" class="button" value="Login" />
-                    <span><?php echo $error; ?></span>
+                    <input type="submit" class="button" value="Login" onclick="check(this.form)" />
                 </form>
             </div>
         </div>

@@ -1,4 +1,8 @@
 <?php
+function function_alert($msg)
+{
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
 if (isset($_POST['submit'])) {
     if (
         isset($_POST['username']) && isset($_POST['password1']) &&
@@ -38,11 +42,13 @@ if (isset($_POST['submit'])) {
                 $stmt = $conn->prepare($Insert);
                 $stmt->bind_param("ssssi", $username, $password, $gender, $email, $phone);
                 if ($stmt->execute()) {
-                    echo "New record inserted sucessfully.";
+                    function_alert("You Have been Registered Successfully! Please return to the login page.");
+                    header("location: profile.php");
                 } else {
                     echo $stmt->error;
                 }
             } else {
+                // function_alert("Someone already registers using this email.");
                 echo "Someone already registers using this email.";
             }
             $stmt->close();

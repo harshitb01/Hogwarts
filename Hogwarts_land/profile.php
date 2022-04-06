@@ -8,15 +8,237 @@ if (!isset($_SESSION['login_user'])) {
 <html>
 
 <head>
-    <title>Your Home Page</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>The Gryffindor Hub | Diagon Alley</title>
+    <meta name="description" content="This is the description" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js"></script>
+    <link rel="stylesheet" href="styles-foot.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div id="profile">
-        <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
-        <b id="logout"><a href="logout.php">Log Out</a></b>
-    </div>
+    <header class="main-header">
+        <nav>
+            <label>The Gryffindor Hub</label>
+            <ul>
+                <li><a href="index.html">Login</a></li>
+                <li class="active"><a href="store.html">Diagon Alley</a></li>
+                <li><a href="table.html">Meet Our Star Cast</a></li>
+                <li><a href="about.html">About</a></li>
+                <div class="cart-nav">
+                    <a href="#cartgo">
+                        <div class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="item-count">0</div>
+                    </a>
+                </div>
+                <div id="profile">
+                    <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
+                    <b id="logout"><a href="logout.php">Log Out</a></b>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="container content-section">
+        <h2 class="section-header">Books</h2>
+        <div class="shop-items">
+            <div class="shop-item" id="Harry Potter and the Philosopher's Stone">
+                <span class="shop-item-title">Harry Potter and the Philosopher's Stone</span>
+                <img class="shop-item-image" src="Images/philosophers-stone.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">400 ₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Harry Potter and the Chamber Of Secrets">
+                <span class="shop-item-title">Harry Potter and the Chamber Of Secrets </span>
+                <img class="shop-item-image" src="Images/chamber-of-secrets.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">400 ₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Harry Potter and the Prisoner Of Azkaban">
+                <span class="shop-item-title">Harry Potter and the Prisoner Of Azkaban</span>
+                <img class="shop-item-image" src="Images/prisoner-of-azkaban.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">400 ₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Harry Potter and the Goblet Of Fire">
+                <span class="shop-item-title">Harry Potter and the Goblet Of Fire</span>
+                <img class="shop-item-image" src="Images/goblet-of-fire.png" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">400 ₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item" id="Harry Potter and the Order of the Phoenix">
+                <span class="shop-item-title">Harry Potter and the Order of the Phoenix</span>
+                <img class="shop-item-image" src="Images/order-of-phoenix.jpeg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">400 ₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Harry Potter and the Half-Blood Prince">
+                <span class="shop-item-title">Harry Potter and the Half-Blood Prince</span>
+                <img class="shop-item-image" src="Images/half-blood-prince.jpeg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">400 ₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Harry Potter and the Deathly Hallows">
+                <span class="shop-item-title">Harry Potter and the Deathly Hallows</span>
+                <img class="shop-item-image" src="Images/deathly-hallows.png" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">400 ₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item" id="Harry Potter Bundle">
+                <span class="shop-item-title">Harry Potter Bundle (7 Books Included)</span>
+                <img class="shop-item-image" src="Images/bundle.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">2650₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">MERCHANDISE</h2>
+        <div class="shop-items">
+            <div class="shop-item" id="Harry Potter Boggle Head">
+                <span class="shop-item-title">Harry Potter Boggle Head</span>
+                <img class="shop-item-image" src="Images/boggle-head.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">950 ₹</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Chess Set">
+                <span class="shop-item-title">Chess Set</span>
+                <img class="shop-item-image" src="Images/chess-set.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">3500 ₹ </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Hogwarts Hoodie">
+                <span class="shop-item-title">Hogwarts Hoodie</span>
+                <img class="shop-item-image" src="Images/hogwarts-hoodie.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">1150 ₹ </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Slytherin House Hoodie">
+                <span class="shop-item-title">Slytherin House Hoodie</span>
+                <img class="shop-item-image" src="Images/slytherin-hoodie.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">1350 ₹ </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item" id="Gryffindor House Hoodie">
+                <span class="shop-item-title">Gryffindor House Hoodie</span>
+                <img class="shop-item-image" src="Images/gryffindor-hoodie.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">1350 ₹ </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div id="Gryffindor Quidditch Hoodie" class="shop-item">
+                <span class="shop-item-title">Gryffindor Quidditch Hoodie</span>
+                <img class="shop-item-image" src="Images/gryffindor-quidditch-hoodie.jpg" />
+                <div class="shop-item-details">
+                    <span class="shop-item-price">1450 ₹ </span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images/gryffindor-quidditch-hoodie.jpg" width="100" height="100" />
+                    <span class="cart-item-title">Gryffindor Quidditch Hoodie</span>
+                </div>
+                <span class="cart-price cart-column">1450 ₹</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1" />
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images/gryffindor-hoodie.jpg" width="100" height="100" />
+                    <span class="cart-item-title">Gryffindor House Hoodie</span>
+                </div>
+                <span class="cart-price cart-column">1350 ₹</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2" />
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total" id="cartgo">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">₹4150</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    <script>
+        let navbar = document.querySelector("nav");
+        var scrollPrev = window.pageYOffset;
+        window.onscroll = function() {
+            var scrollCur = window.pageYOffset;
+            if (scrollPrev > scrollCur) {
+                navbar.style.top = "0";
+            } else {
+                navbar.style.top = "-90px";
+            }
+            scrollPrev = scrollCur;
+        };
+    </script>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">The Gryffindor's Hub</h3>
+            <div class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><a href="https://www.facebook.com/wizardingworld/"><i class="fab fa-facebook-f"></i></a></span>
+            </div>
+
+            <div class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><a href="https://twitter.com/wizardingworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a></span>
+            </div>
+
+            <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><a href="https://www.instagram.com/wizardingworld/?hl=en"><i class="fab fa-instagram"></i></a></span>
+            </div>
+
+            <div class="icon youtube">
+                <div class="tooltip">YouTube</div>
+                <span><a href="https://www.youtube.com/c/WizardingWorld/videos"><i class="fab fa-youtube"></i></a></span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
             <div class="navbar-nav">
                 <a href="cart.php" class="nav-item nav-link active">
                     <h5 class="px-5 cart">
-                        <i class="fas fa-shopping-cart"></i> Cart
+                        <i class="fas fa-shopping-cart"></i> <label for="px-5 cart" class="cartName">Cart</label>
                         <?php
                         if (isset($_SESSION['cart'])) {
                             $count = count($_SESSION['cart']);

@@ -2,7 +2,7 @@
     font-family: "Potter";
     src: url("font/HarryPotter-ov4z.ttf");
 }
-img{
+img {
     max-width: 100%;
     height: auto;
     background: lightblue;
@@ -10,47 +10,47 @@ img{
 }
 
 .fa-star,
-.fa-star-half{
+.fa-star-half {
     color: yellowgreen;
     padding: 3% 0;
 }
 
-#cart_count{
+#cart_count {
     text-align: center;
     padding: 0 0.9rem 0.1rem 0.9rem;
     border-radius: 3rem;
 }
 
-.shopping-cart{
+.shopping-cart {
     padding: 3% 0;
 }
 
-.cart-items + .cart-items{
+.cart-items + .cart-items {
     padding: 2% 0;
 }
 
-.price-details h6{
+.price-details h6 {
     padding: 3% 2%;
 }
-.navbar-brand{
+.navbar-brand {
     font-family: "Potter";
 }
-.cartName{
+.cartName {
     font-family: "Potter";
 }
-.text-center .col-md-3:hover{
+.text-center .col-md-3:hover {
     z-index: 1;
     transform: scale(1.11);
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
-.text-center .col-md-3{
+.text-center .col-md-3 {
     padding-top: 50px;
 }
-#welcome{
+#welcome {
     font-family: "Potter";
 }
-#logout{
+#logout {
     font-family: "Potter";
 }
 .purchaseButton {
@@ -70,8 +70,8 @@ img{
     cursor: pointer;
     transition: 0.5s;
     position: absolute;
-    margin-top: 20px;
-    transform: translateX(0%);
+    margin-top: 200px;
+    transform: translateX(-100%);
 }
 /* .purchaseButton {
     color: #d62020;

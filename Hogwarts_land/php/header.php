@@ -5,6 +5,14 @@
                 <i class="fas fa-shopping-basket"></i> Shopping Cart
             </h3>
         </a>
+        <ul id="navbar">
+                <!-- <div style="float:left" class="navHeading">Hogwarts Hub</div> -->
+                <li><a href="">LOGIN</a></li>
+                <li><a href="">DIAGON ALLEY</a></li>
+                <!-- <li><a href="table.html">MEET OUR STAR CAST</a></li> -->
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="" class="btnLogout glyphicon-log-out" style="float:right">LOGOUT</a></li>
+        </ul>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

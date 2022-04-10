@@ -97,5 +97,42 @@ img {
 .project-area .button-group button + button {
     padding-left: 3rem;
 }
+#navbar li {
+    position: relative;
+    display: inline-flex;
+    transition: 0.8s;
+    margin-right: 45px;
+    font-size: 20px;
+    font-family: "Potter";
+    font-weight: bold;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:hover {
+    color: goldenrod;
+    
+}
+.navHeading{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: "Potter";
+}
+#navbar {
+    text-align: center;
+    background-color: #343A40;
+    margin-top: 20px !important;
+    margin-left: -10px !important;
+    width: 70%;
+
+}
+
+/* .btnLogout{
+    position: relative;
+} */
 
 /* ===================== end of project area ======================= */

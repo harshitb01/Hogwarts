@@ -44,6 +44,7 @@ if (isset($_POST['remove'])) {
                     <hr>
                     <?php
                     $total = 0;
+                    // $quantity = 0;
                     if (isset($_SESSION['cart'])) {
                         $product_id = array_column($_SESSION['cart'], 'product_id');
 
@@ -52,7 +53,9 @@ if (isset($_POST['remove'])) {
                             foreach ($product_id as $id) {
                                 if ($row['id'] == $id) {
                                     cartElement($row['product_image'], $row['product_name'], $row['product_price'], $row['id']);
+                                    // $quantity = $quantity + $_POST('form-control');
                                     $total = $total + (int)$row['product_price'];
+                                    // $total = $total + (int)$row['product_price']* (int)$quantity;
                                 }
                             }
                         }
@@ -81,12 +84,12 @@ if (isset($_POST['remove'])) {
                             <h6>Amount Payable</h6>
                         </div>
                         <div class="col-md-6">
-                            <h6>$<?php echo $total; ?></h6>
+                            <h6>$ <?php echo $total; ?>
+                            </h6>
                             <h6 class="text-success">FREE</h6>
                             <hr>
-                            <h6>$<?php
-                                    echo $total;
-                                    ?></h6>
+                            <h6>$ <?php echo $total; ?>
+                            </h6>
                         </div>
                         <div class="purchaseBtn">
                             <button type="purchase" class="purchaseButton">Purchase</button>

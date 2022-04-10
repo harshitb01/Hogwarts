@@ -50,7 +50,142 @@ if (isset($_POST['add'])) {
 
 <body>
     <?php require_once("php/header.php"); ?>
-    <div class="container">
+    <section class="project-area">
+        <div class="container">
+            <div class="project-title pb-5">
+                <h1 class="text-uppercase title-h1">Digon Alley</h1>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                <button type="button" data-filter=".gryffindor">Gryffindor</button>
+                <button type="button" data-filter=".slytherin">Slytherin</button>
+                <button type="button" data-filter=".ravenclaw">Ravenclaw</button>
+                <button type="button" data-filter=".hufflepuff">Hufflepuff</button>
+            </div>
+
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item slytherin">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="#bottom">
+                                <img src="./Images/product1.png" alt="portfolio-1" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Minimul Desing</h4>
+                            <span class="text-secondary">slytherin, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item gryffindor">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p2.jpg">
+                                <img src="./Images/product2.png" alt="portfolio-2" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Paint Wall</h4>
+                            <span class="text-secondary">Gryffindor, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item gryffindor">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p3.jpg">
+                                <img src="./Images/product2.png" alt="portfolio-3" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Female light</h4>
+                            <span class="text-secondary">Gryffindor, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item hufflepuff">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                <img src="./Images/product3.png" alt="portfolio-4" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Fourth Air</h4>
+                            <span class="text-secondary">hufflepuff, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item hufflepuff">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p5.jpg">
+                                <img src="./Images/product4.png" alt="portfolio-5" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Muliple fown</h4>
+                            <span class="text-secondary">hufflepuff, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item ravenclaw">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p6.jpg">
+                                <img src="./Images/product1.png" alt="portfolio-6" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Together sign</h4>
+                            <span class="text-secondary">ravenclaw, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item ravenclaw">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p7.jpg">
+                                <img src="./Images/product2.png" alt="portfolio-7" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Green Heaven</h4>
+                            <span class="text-secondary">ravenclaw, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p8.jpg">
+                                <img src="./Images/product4.png" alt="portfolio-8" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Fly Male</h4>
+                            <span class="text-secondary">Following, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item hufflepuff">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p9.jpg">
+                                <img src="./Images/product1.png" alt="portfolio-9" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Camera Lens</h4>
+                            <span class="text-secondary">hufflepuff, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container" id="bottom">
         <div class="row text-center py-5">
             <?php
             $result = $database->getData();
@@ -64,6 +199,8 @@ if (isset($_POST['add'])) {
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./bootstrap/isotope.min.js"></script>
+    <script src="store.js"></script>
 </body>
 
 </html>

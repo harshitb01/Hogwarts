@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Potter";
+    src: url("font/HarryPotter-ov4z.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Potter";
+    box-sizing: border-box;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width:550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: gold;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text p{
+    color: whitesmoke;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.buttonMeet{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #113eaedf, #9af5fd, #1307bee8);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: wheat;
+    font-family: "Potter";
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+    padding-top: 5px;
+}
+.buttonMeet:hover{
+        background-position: right;
+}
+#navbar {
+    text-align: center;
+    padding: 30px;
+    background-color: #233150
+}
+
+#navbar li {
+    position: relative;
+    display: inline-flex;
+    transition: 0.8s;
+    margin-right: 45px;
+    font-size: 20px;
+    font-family: Bluu Next, serif;
+    font-weight: bold;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:hover {
+    color: red;
+    
+}
+.navHeading{
+    font-size: 34px;
+    text-align: center;
+    color: white;
+}
+.btnLogout{
+    position: relative;
+    right: -380px;
+}

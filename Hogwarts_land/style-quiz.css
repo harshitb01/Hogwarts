@@ -3,7 +3,7 @@
     src: url("font/HarryPotter-ov4z.ttf");
 }
 body {
-    background-image: url("Images/Background.png");
+    background-image: url("Images/Hogwarts.png");
     overflow: hidden;
 }
 .quiz-container {

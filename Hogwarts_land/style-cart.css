@@ -114,9 +114,8 @@ img {
 
 #navbar a:hover {
     color: goldenrod;
-    
 }
-.navHeading{
+.navHeading {
     font-size: 30px;
     text-align: center;
     color: white;
@@ -124,11 +123,10 @@ img {
 }
 #navbar {
     text-align: center;
-    background-color: #343A40;
+    background-color: #343a40;
     margin-top: 20px !important;
     margin-left: -10px !important;
-    width: 70%;
-
+    width: 65%;
 }
 
 /* .btnLogout{
